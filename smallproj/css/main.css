@@ -1,0 +1,113 @@
+/*the min-height thats give the screen limeted height so i can countrol of every thing but before thin word if i didnt write it 
+so the hight forb the  screen it gonna be infinity so if i tayb on hero and i give the background % its not gonna give nothing but after min....
+its make the screen have limite so i can tybe % on hero class*/
+body,
+html{
+	margin: 0;
+	padding: 0;
+	
+	min-height: 100%;
+
+}
+/*how to add back ground img from my folder in css*/
+/*here i gave the bg 3 thing 1- height make it on the all screen
+2- size if i dont wanna repet my img i wanat to cover the all thing
+3- the position center make the center of the img in the medill of the screen */
+.hero{
+	background-image: url(../img/sun.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+/*i can put it here or in the html*/
+.hero img{
+	height: 30px;
+}
+/*inline-block make every thing i want sit next to each other make them friendly */
+
+.logo{
+	display: inline-block;
+	margin-left: 25%;
+	margin-top: 30px;
+}
+.logo h2{
+	display: inline-block;
+}
+/*we use position insted of flote becuse position make it independant no any othe element effict it and right 0 thats meen
+maket 0px from the right i canmaket more its better than flot*/
+.nav{
+	display: inline-block;
+	position: absolute;
+	right: 20%;
+	margin-top: 30px;
+}
+/*padding here to creat space between each li*/
+.nav li{
+	display: inline-block;
+	padding: 10px 25px;
+}
+/*to remove the under line*/
+.nav a{
+	text-decoration: none;
+}
+.herocontent{
+	padding: 100px 0;
+	text-align: center;
+	color: white;
+
+}
+/*the * meen evrething*/
+.herocontent *{
+	margin: 0;
+
+}
+/*to make it slide to the right*/
+.herocontent p{
+	padding-right: 80px;
+	font-size: 24px;
+}
+.herocontent h1{
+	padding-left: 80px;
+}
+.herocontent button{
+	background-color: aqua;
+	margin-top: 30px
+	border: none;
+	padding: 5px 20px;
+	border-radius: 6px;
+	font-size: 20px;
+}
+/*we work in gallary section*/
+/*we use the -100 to delet the main back ground and makeup mine*/
+/*we put border becuse we wanna make it look like somthing on top of somthing and the width if we see the pic we coped we will see the midell part it dosent
+tack the all the screen*/
+/*look in the margin we put-100 and auto and 0 se we maket backword becuse i wana do it from bottom
+to the top */
+.maingallerybox{
+	text-align: center;
+	margin-top: -100px;
+	background-color: white;
+	width: 80%;
+	margin: -100px auto 0;
+	border-radius: 10px;
+	padding-top: 50px;
+	box-shadow: 0px 0px 10px;
+
+}
+/*the height here its 500px */
+.picwrapper{
+	width: 95%;
+	height: 500px;
+	background-color: blue;
+	margin: 30px auto 50px;
+
+}
+/*so here i give 100% the height thats meen give the child 100 of the pearnts*/
+.picwrapper .colomn{
+	background-color: yellow;
+	height: 100%;
+	border: 2px black solid;
+	display: inline-block;
+	width: 30%;
+
+}
